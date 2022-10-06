@@ -2,7 +2,7 @@
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch }) {
   const url = 'https://jsonplaceholder.typicode.com/posts'
-  const config = { method: 'get', headers: { origin: '*'} }
+  const config = { method: 'get', headers: { origin: 'https://ninja-gaming-teal.vercel.app/'} }
   const request = new Request(url, config)
   const res = await fetch(request)
   const guides = await res.json()
